@@ -1,12 +1,17 @@
-const input = document.querySelector('#name-input');
+const inputElem = document.querySelector('#name-input');
 const titleElem = document.querySelector('#name-output');
 
-input.addEventListener('input', onInputChange);
+
+inputElem.addEventListener('input', onInputChange);
 
 
 function onInputChange(event) {
     console.log(event.currentTarget.value);
     
-    titleElem.textContent = event.currentTarget.value;
+    if (inputElem.value.length < 1) {
+        titleElem.textContent = 'незнакомец'
+    } else (titleElem.textContent = event.currentTarget.value);
 }
 
+
+    
