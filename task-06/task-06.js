@@ -22,8 +22,9 @@ function onInputBlur(event) {
     if (inputElem.value.length === 6) {
         inputElem.classList.add('valid'),
         inputElem.classList.remove('invalid')
-    } else if (inputElem.value.length === 0) {
-        inputElem.classList.remove('validation-input')
+    } else if (inputElem.value.length < 1) {
+        inputElem.classList.remove('valid'),
+        inputElem.classList.remove('invalid')
     }
     else (inputElem.classList.add('invalid'),
           inputElem.classList.remove('valid'));
