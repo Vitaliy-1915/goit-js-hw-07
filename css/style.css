@@ -1,0 +1,8 @@
+.list__link {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list__link:not(:last-child) {
+  margin-right: 50px;
+}
