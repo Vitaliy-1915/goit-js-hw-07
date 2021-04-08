@@ -1,6 +1,7 @@
 .list__link {
   display: flex;
   justify-content: space-between;
+  list-style: none;
 }
 
 .list__link:not(:last-child) {
