@@ -19,7 +19,7 @@ function onInputBlur(event) {
 
     console.log(inputElem.value.length);
 
-    if (inputElem.value.length === 6) {
+    if (inputElem.value.length === Number(inputElem.dataset.length)) {
         inputElem.classList.add('valid'),
         inputElem.classList.remove('invalid')
     } else if (inputElem.value.length < 1) {
